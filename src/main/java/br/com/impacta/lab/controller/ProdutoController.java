@@ -33,7 +33,7 @@ public class ProdutoController {
         for (int contador = 0; contador < bancoDeDados.size(); contador++) {
             Produto produto = bancoDeDados.get(contador);
             if (produto.getCodigo() == codigo) {
-                produto.setCodigo(newProduto.getCodigo());
+                produto.setValor(newProduto.getValor());
                 produto.setDescricao(newProduto.getDescricao());
 
                 return ResponseEntity.ok(produto);
